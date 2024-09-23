@@ -17,6 +17,6 @@ class FileUtils
      */
     public static function isPhar($file)
     {
-        return substr(strtolower($file), 0, 7) === 'phar://';
+        return substr(strtolower(trim($file)), 0, 7) === 'phar://';
     }
 }
